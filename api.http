@@ -1,4 +1,4 @@
-@host = http://localhost:3000
+@host = https://meu-back-end.onrender.com
 @baseUrl = {{host}}/api/v1
 @contenType = application/json
 
