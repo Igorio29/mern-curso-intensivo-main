@@ -10,8 +10,15 @@ const port = process.env.PORT || 3000;
 const __dirname = path.resolve();
 
 const app = express();
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'https://mern-biblioteca.onrender.com', // Substitua pelo link do seu frontend
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
+}));
 
 app.use(express.json());
+
 
 app.get("/health", (req, res) => {
   try {

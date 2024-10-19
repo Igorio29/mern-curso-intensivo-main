@@ -3,7 +3,7 @@ import axios from "axios";
 const API_VERSION = "v1";
 
 const axiosInstance = axios.create({
-  baseURL: `https://mern-curso-intensivo-main.onrender.com/api/${API_VERSION}`,
+  baseURL: `/api/${API_VERSION}`,
   headers: {
     "Content-Type": "application/json",
   },
